@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+#main-div{
+  background-color:#FDF3E7;
+  width:100%;
+  height:900px;
+  overflow: hidden;
+  padding:20px;
+  padding-top:80px;
+  padding-bottom:80px;
+  text-align: center;
+}
+
+/*.playerWins{
+  font-size 18px;
+}*/
+
+#wins-div{
+  width:100%;
+  text-align: center;
+  -webkit-columns: 00px 2; /* Chrome, Safari, Opera */
+  -moz-columns: 00px 2; /* Firefox */
+  columns: 00px 2;
+}
+
+#game-div{
+  background-color:#A9C5F4;
+  width:450px;
+  height:550px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+#menu-div{
+  //background-color:#D9853B;
+  width:400px;
+  height:360px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+#gameBoard-div{
+  width:420px;
+  height:360px;
+  border-radius: 10px;
+  margin-top: 0 auto;
+  z-index: 20;
+  //text-align: center;
+  position: absolute;
+  display:inline-block;
+}
+
+#player-div{
+  text-align: center;
+  display:inline-block;
+}
+
+.player-btn{
+  height: 30px;
+  width: 100px;
+}
+
+.session-div{
+  text-align: center;
+}
+
+.boardRow-div{
+  //position: absolute;
+  height: 130px;
+  width: 100%;
+  margin-left: 20px;
+  //display: inline-block;
+}
+
+.gradButton {
+  //margin: 20px;
+  width: 6vw;
+  height: 6vw;
+  //left: 50vw;
+  //top: 50vh;
+  //transform: translate(-50%,-80%);
+  font-family: 'Varela Round', sans-serif;
+  font-size: 2vw;
+  letter-spacing: 0.1em;
+  color: #e8e8e8;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: linear-gradient(45deg,#d350db,teal,#d350db);
+  background-size: 400% 400%;
+  box-shadow: 1vw 1vw 0 lightcoral;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    animation: gradient 10s ease infinite;
+    font-size: 2.05vw;
+    box-shadow: 0.2vw 0.2vw 0 lightcoral;
+  }
+}
+
+@keyframes gradient {
+  50% {
+    background-position: 100% 0;
+  }
+}
+
+.three-cols{
+  -webkit-columns: 00px 3; /* Chrome, Safari, Opera */
+  -moz-columns: 00px 3; /* Firefox */
+  columns: 00px 3;
+}
